@@ -1,0 +1,27 @@
+{
+  "name": "Jama Surya Teja",
+  "title": "Full Stack Developer",
+  "email": "jama.suryateja@gmail.com",
+  "phone": "+91 7780283177",
+  "location": "Tirupathi, Andhra Pradesh, India",
+  "connections": "500+ connections",
+  "mutualConnection": {
+    "name": "Jama Surya Teja",
+    "image": "../assets/profilepic.jpg"
+  },
+  "skills": [
+    "Senior Software Engineer - Value Labs",
+    "Full Stack Web Developer", "Micro Frontend Architecture", 
+    "Vellore Institute of Technology, Vellore"
+  ],
+  "companies": [
+    {
+      "name": "ValueLabs",
+      "logo": "../assets/valuelabs.jpg"
+    },
+    {
+      "name": "Vellore Institute of Technology",
+      "logo": "../assets/vit.jpg"
+    }
+  ]
+}
