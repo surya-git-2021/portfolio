@@ -23,5 +23,45 @@
       "name": "Vellore Institute of Technology",
       "logo": "../assets/vit.jpg"
     }
+  ],
+  "abouttext": "As a dedicated MERN stack developer with over 3 years of experience, I specialize in building robust and scalable web applications that prioritize exceptional user experiences. My expertise spans across a range of technologies including ReactJS, NextJS, Redux, Redux Toolkit, Angular, NodeJS, Express.js, and MongoDB. I am also proficient in working with databases, BigQuery, and implementing CI/CD pipelines using GitHub and Jenkins.\nI am passionate about leveraging my skills to create innovative solutions and continuously strive to stay updated with the latest industry trends. My goal is to contribute to impactful projects that push the boundaries of web development.",
+  "experience": [
+    {
+      "id": 1,
+      "role": "Software Engineer",
+      "company": "Grid Dynamics",
+      "employmentType": "Full-time",
+      "startDate": "Mar 2024",
+      "endDate": "Present",
+      "duration": "1 yr",
+      "location": "Hyderabad, Telangana, India",
+      "workType": "Hybrid",
+      "companyLogo": "/api/placeholder/48/48",
+      "skills": []
+    },
+    {
+      "id": 2,
+      "company": "Ivy",
+      "employmentType": "Full-time",
+      "duration": "2 yrs 5 mos",
+      "companyLogo": "/api/placeholder/48/48",
+      "positions": [
+        {
+          "role": "Software Engineer",
+          "startDate": "Oct 2022",
+          "endDate": "Jan 2024",
+          "duration": "1 yr 4 mos",
+          "location": "Hyderabad, Telangana, India",
+          "skills": ["JavaScript", "Node.js", "+7 skills"]
+        },
+        {
+          "role": "Trainee software engineer",
+          "startDate": "Sep 2021",
+          "endDate": "Oct 2022",
+          "duration": "1 yr 2 mos",
+          "skills": ["JavaScript", "Node.js", "+15 skills"]
+        }
+      ]
+    }
   ]
 }
