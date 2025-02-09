@@ -1,31 +1,27 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-
-const certifications =[
-    {
-      name: "Node.js Essential Certification",
-      issuer: "LinkedIn",
-      issuedDate: "Aug 2022",
-      logo: "/api/placeholder/48/48"
-    },
-    {
-      name: "React Hooks",
-      issuer: "LinkedIn",
-      issuedDate: "Aug 2022",
-      logo: "/api/placeholder/48/48"
-    }
-  ]
+import profileInfo from '../data/profile.json';
+import one from '../assets/certifications/1.jpg';
+import two from '../assets/certifications/2.jpg';
+import three from '../assets/certifications/3.jpg';
 
 const LicencesSection = () => {
+  const licensesMap = {
+    'Crash Course on Python': one,
+    'Neural Networks and Deep Learning': two,
+    'Programming for Everybody (Getting Started with Python)': three,
+  };
+
+
   return (
-    <div className="w-[56rem] max-w-4xl mx-auto p-6 space-y-8">
+    <div className="w-full max-w-4xl mx-auto p-6 space-y-8">
       <section>
         <h2 className="text-xl font-semibold mb-6">Licenses & certifications</h2>
         <div className="space-y-6">
-          {certifications.map((cert, index) => (
+          {profileInfo.certifications.map((cert, index) => (
             <div key={index} className="flex gap-4">
               <img
-                src={cert.logo}
+                src={licensesMap[cert.name] || three}
                 alt={`${cert.issuer} logo`}
                 className="w-12 h-12"
               />

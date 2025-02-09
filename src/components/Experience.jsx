@@ -1,10 +1,10 @@
 import React from 'react';
 import { Code } from 'lucide-react';
 import experienceData from '../data/profile.json';
-
+import companyLogo from '../assets/valuelabs.jpg';
 const ExperienceSection = () => {
   return (
-    <div className="w-[56rem] max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6">
+    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6">
       <h2 className="text-xl font-semibold mb-4">Experience</h2>
       
       <div className="space-y-6">
@@ -13,7 +13,7 @@ const ExperienceSection = () => {
             {/* Company Logo */}
             <div className="flex-shrink-0">
               <img
-                src={experience.companyLogo}
+                src={companyLogo}
                 alt={experience.company}
                 className="w-12 h-12 rounded"
               />

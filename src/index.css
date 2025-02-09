@@ -28,8 +28,18 @@ code {
 .app-root{
   background-color: var(--bg-color);
 }
-.app-root > :not(:first-child){
+.boxes-wrapper > :not(:first-child), .box-wrap{
   outline: 1px solid rgba(128, 128, 128, 0.14);
   background-color: white;
   border-radius: 5px;
+}
+.MuiButtonBase-root{
+  text-transform: capitalize !important;
+}
+.lets-connect{
+  background-image: url('../src/assets/loyalty.gif');
+  background-size: contain;
+  background-position-x: 10rem;
+  background-position-y: 5rem;
+  background-repeat: no-repeat;
 }

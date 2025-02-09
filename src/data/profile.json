@@ -2,6 +2,9 @@
   "name": "Jama Surya Teja",
   "title": "Full Stack Developer",
   "email": "jama.suryateja@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/jamasuryateja/",
+  "github": "https://github.com/surya-git-2021",
+  "instagram": "https://www.instagram.com/surya_jama/",
   "phone": "+91 7780283177",
   "location": "Tirupathi, Andhra Pradesh, India",
   "connections": "500+ connections",
@@ -11,7 +14,8 @@
   },
   "skills": [
     "Senior Software Engineer - Value Labs",
-    "Full Stack Web Developer", "Micro Frontend Architecture", 
+    "Full Stack Web Developer",
+    "Micro Frontend Architecture",
     "Vellore Institute of Technology, Vellore"
   ],
   "companies": [
@@ -24,44 +28,189 @@
       "logo": "../assets/vit.jpg"
     }
   ],
-  "abouttext": "As a dedicated MERN stack developer with over 3 years of experience, I specialize in building robust and scalable web applications that prioritize exceptional user experiences. My expertise spans across a range of technologies including ReactJS, NextJS, Redux, Redux Toolkit, Angular, NodeJS, Express.js, and MongoDB. I am also proficient in working with databases, BigQuery, and implementing CI/CD pipelines using GitHub and Jenkins.\nI am passionate about leveraging my skills to create innovative solutions and continuously strive to stay updated with the latest industry trends. My goal is to contribute to impactful projects that push the boundaries of web development.",
+  "abouttext": "<span aria-hidden='true'><!---->Hi there! 👋 I'm Surya.<!----><br><br><!---->I'm a Full Stack Developer with 2+ years of experience in building scalable and high-performance applications. I specialize in Micro-Frontend architecture, React, Angular, Redux, NgRx, and RxJS delivering seamless user experiences.<span class='white-space-pre'> </span><br><!---->My expertise extends to real-time updates (Server-Sent Events), optimizing application performance, and backend development with Node.js, Express.js, MongoDB, and MySQL.<!----><br><!---->I thrive in fast-paced environments, collaborating with cross-functional teams to drive innovation and efficiency.<span class='white-space-pre'> </span><br><br><!---->Key Achievements<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Engineered a Hybrid Micro-Frontend architecture using Module Federation, reducing UI<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>redevelopment by 80% and improving cross-framework compatibility.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Enhanced client data refresh rates by 46% through Server-Sent Events (SSE), minimizing server<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>polling and improving real-time performance.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Optimized application state management with Redux and NgRx, ensuring better data consistency<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>and smoother user experiences.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Boosted page loading speeds by 30% by leveraging modern frontend technologies like React 18,<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>Angular 15+, and Material-UI.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Improved application responsiveness by 67.6% using RxJS, enhancing asynchronous data<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>handling.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Led backend development with Node.js and Express.js, building robust APIs to support dynamic<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>frontend functionalities.<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>- Mentored junior developers, conducted code reviews, and championed best practices to maintain<span class='white-space-pre'> </span><br><span class='white-space-pre'> </span>high-quality codebases.<span class='white-space-pre'> </span><br><br><!---->I aim to contribute to innovative projects that push the boundaries of performance, scalability, and user experience. Let’s connect and build something amazing!<!----></span>",
   "experience": [
     {
       "id": 1,
-      "role": "Software Engineer",
-      "company": "Grid Dynamics",
+      "company": "ValueLabs",
       "employmentType": "Full-time",
-      "startDate": "Mar 2024",
-      "endDate": "Present",
-      "duration": "1 yr",
-      "location": "Hyderabad, Telangana, India",
-      "workType": "Hybrid",
-      "companyLogo": "/api/placeholder/48/48",
-      "skills": []
-    },
-    {
-      "id": 2,
-      "company": "Ivy",
-      "employmentType": "Full-time",
-      "duration": "2 yrs 5 mos",
-      "companyLogo": "/api/placeholder/48/48",
+      "duration": "2 yrs 3 mos",
+      "companyLogo": "../assets/valuelabs.jpg",
       "positions": [
         {
-          "role": "Software Engineer",
-          "startDate": "Oct 2022",
-          "endDate": "Jan 2024",
-          "duration": "1 yr 4 mos",
+          "role": "Senior Software Engineer Specialist",
+          "startDate": "Apr 2024",
+          "endDate": "Present",
+          "duration": "11 mos",
           "location": "Hyderabad, Telangana, India",
-          "skills": ["JavaScript", "Node.js", "+7 skills"]
+          "skills": [
+            "Redux",
+            "Express",
+            "+7 skills"
+          ]
         },
         {
-          "role": "Trainee software engineer",
-          "startDate": "Sep 2021",
-          "endDate": "Oct 2022",
-          "duration": "1 yr 2 mos",
-          "skills": ["JavaScript", "Node.js", "+15 skills"]
+          "role": "Software Engineer Specialist",
+          "startDate": "Dec 2022",
+          "endDate": "Apr 2024",
+          "duration": "1 yr 5 mos",
+          "skills": [
+            "React",
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "+15 skills"
+          ]
         }
       ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Vellore Institute of Technology",
+      "degree": "Bachelor of Technology - BTech, Computer Science and Engineering",
+      "duration": "2019 - Apr 2023",
+      "grade": "8.51 CGPA",
+      "skills": [
+        "Java",
+        "Python (Programming Language)",
+        "+10 skills"
+      ]
+    },
+    {
+      "institution": "Sri Chaitanya College of Education",
+      "degree": "Class 11 and 12 - Maths, Physics and Chemistry",
+      "grade": "98.5 CGPA",
+      "duration": "Jul 2017 - Sep 2019"
+    }
+  ],
+  "certifications": [
+    {
+          "name": "Crash Course on Python",
+          "issuer": "Google",
+          "issuedDate": "Sep 2021"
+    },
+    {
+          "name": "Neural Networks and Deep Learning",
+          "issuer": "DeepLearning.AI",
+          "issuedDate": "Jun 2020"
+    },
+    {
+          "name": "Programming for Everybody (Getting Started with Python)",
+          "issuer": "University of Michigan",
+          "issuedDate": "Jun 2020"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Secure pass – safe storage and password manager based on cryptanalysis",
+      "duration": "Aug 2021 - Aug 2021",
+      "associatedWith": {
+        "name": "Vellore Institute of Technology",
+        "logo": "/api/placeholder/32/32"
+      },
+      "description": "Built a Mobile app to store passwords in the local Database instead of Kaspersky. Enhanced security using Argon2id algorithm by providing a balanced approach to resisting both side - channel and GPU - based attacks. Reduced the RAM requirements by 32%",
+      "contributors": [
+        {
+          "avatar": "/api/placeholder/48/48",
+          "name": "Contributor 1"
+        }
+      ]
+    },
+    {
+      "title": "Expense Tracker",
+      "duration": "Nov 2020 - Jan 2021",
+      "associatedWith": {
+        "name": "Vellore Institute of Technology",
+        "logo": "/api/placeholder/32/32"
+      },
+      "description": "Developed an application to maintain and manage user's expenses. Integrated a feature to check the activity status. Enhancements : Filter functions, Chat assistant, Info-graphics, A",
+      "skills": ["Web Development"]
+    }
+  ],
+  "received": [
+    {
+      "author": {
+        "name": "Krishna Yanmantram",
+        "title": "SDE @BankofAmerica",
+        "relationship": "1st"
+      },
+      "date": "February 8, 2025",
+      "connection": "Krishna and Jama studied together",
+      "content": [
+        "Would always and will count Surya for his humility, loyalty, and technical expertise. He is always respectful and approachable, making him a great team player. His loyalty to friends, colleagues, and commitments is admirable, and he can always be counted on.",
+        "One of his most outstanding qualities is his genuine intention to help others. Whether assisting with technical challenges or offering support, he is always willing to lend a hand without hesitation. His kindness and willingness to share knowledge make him a valued friend.",
+        "In addition to his strong character, Surya is highly skilled in his field. He has a sharp problem-solving mindset and adapts quickly to challenges. I truly believe that he will make a positive impact wherever he goes."
+      ]
+    }
+  ],
+  "given": [],
+  "publications": [
+    {
+      "title": "Secure pass – safe storage and password manager based on cryptanalysis",
+      "publisher": "IJARIIT",
+      "date": "Jun 15, 2022",
+      "otherAuthors": [
+        {
+          "avatar": "/api/placeholder/48/48",
+          "name": "Co-author 1"
+        }
+      ],
+      "redirectURL": "https://www.ijariit.com/manuscript/secure-pass-safe-storage-and-password-manager-based-on-cryptanalysis/"
+    },
+    {
+      "title": "Sensitivity Analysis using k-anonymization",
+      "publisher": "IJARIIT",
+      "date": "Jun 8, 2022",
+      "otherAuthors": [
+        {
+          "avatar": "/api/placeholder/48/48",
+          "name": "Co-author 1"
+        }
+      ],
+      "redirectURL": "https://www.ijariit.com/manuscript/sensitivity-analysis-using-k-anonymization/"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Super Star Of The Quarter",
+      "issuer": "Sai Divya Gummadi",
+      "date": "Dec 2023",
+      "company": {
+        "name": "ValueLabs",
+        "logo": "/api/placeholder/32/32"
+      },
+      "description": "Honored to be awarded \"Super Star of the Quarter\" at Valuelabs! 🏆 Grateful for the recognition and proud to be part of a team that values hard work and dedication. This wouldn't be possible without the incredible support from colleagues. \n Here's to more success together! 🚀 #SuperStar #TeamRecognition #Grateful",
+      "image": {
+        "src": "/api/placeholder/400/200",
+        "alt": "IMG_20231204_170307.png"
+      }
+    },
+    {
+      "title": "Star of the Month",
+      "issuer": "Santhosh TR",
+      "date": "Aug 2023",
+      "company": {
+        "name": "ValueLabs",
+        "logo": "/api/placeholder/32/32"
+      },
+      "description": "🌟 Recipient of the 'Star of the Month Award 🌟 \n Thrilled to share that I have been honored with the esteemed 'Star of the Month' award for my exceptional contributions and dedication to developing a project. This recognition reflects my efforts and the amazing teamwork and support within our organization. \n I thank my colleagues, mentors, and everyone who believed in me, and this isn't possible without the invaluable support of my exceptional team and the continuous encouragement from each of you. Your guidance and encouragement have been instrumental in my journey.",
+      "image": {
+        "src": "/api/placeholder/400/200",
+        "alt": "IMG_20231204_170257.png"
+      }
+    }
+  ],
+  "testScores" : [
+    {
+      "testName": "National Engineering Olympiad - 5.0",
+      "score": "AIR of 450",
+      "date": "Dec 2021",
+      "institution": {
+        "name": "Vellore Institute of Technology",
+        "logo": "/api/placeholder/32/32"
+      },
+      "description": "This is a national wide engineering exam, conducted by Star Skillcare Education Private Ltd."
     }
   ]
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Bell } from 'lucide-react';
 import ProfilePic from '../assets/profilepic.jpg';
 import ValueLabsLogo from '../assets/valuelabs.jpg';
@@ -6,8 +6,34 @@ import VITLogo from '../assets/vit.jpg';
 import profileData from '../data/profile.json';
 import { ShieldCheck } from 'lucide-react';
 import { Send } from 'lucide-react';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import LetsConnect from './LetsConnect';
 
 const ProfileHeader = () => {
+  const profileRef = useRef(null);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const profileElement = profileRef.current;
+      const bannerElement = document.getElementById('profile-banner');
+      if (profileElement && bannerElement) {
+        const rect = profileElement.getBoundingClientRect();
+        if (rect.bottom < 0) {
+          bannerElement.style.display = 'flex';
+        } else {
+          bannerElement.style.display = 'none';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const {
     name,
     location,
@@ -22,8 +48,16 @@ const ProfileHeader = () => {
     "Vellore Institute of Technology": VITLogo
   };
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div ref={profileRef} className="w-full max-w-4xl mx-auto">
       {/* Cover Image */}
       <div className="relative w-full h-48 banner-image rounded-t-lg overflow-hidden">
         {/* Dark overlay with airpods image */}
@@ -48,7 +82,7 @@ const ProfileHeader = () => {
             <div className="flex-1">
               <div className="flex items-center gap-2">
                 <h2 className="text-xl font-semibold">{name} </h2>
-                
+
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded flex items-center"><ShieldCheck /> • 1st</span>
               </div>
               <p className="text-gray-600 mt-1">
@@ -91,21 +125,24 @@ const ProfileHeader = () => {
 
           {/* Action Buttons */}
           <div className="flex gap-2 mt-4">
-            <button className="px-4 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+            <button onClick={handleClickOpen} className="px-4 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700">
               <Send className="w-4 h-4 inline mr-1" />
               Message
             </button>
-            <button className="px-4 py-1 border border-gray-400 text-gray-600 rounded-full hover:bg-gray-50">
+            <button onClick={handleClickOpen} className="px-4 py-1 border border-gray-400 text-gray-600 rounded-full hover:bg-gray-50">
               More
             </button>
             <button className="ml-auto p-2 text-gray-600 hover:bg-gray-100 rounded-full">
               <Bell className="w-5 h-5" />
             </button>
           </div>
+          <Dialog open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+            <LetsConnect />
+          </Dialog>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProfileHeader;
+export default ProfileHeader; 
