@@ -3,7 +3,7 @@ import {
   Search, 
   Menu,
   X,
-  ChevronDown
+  ChevronDown, File
 } from 'lucide-react';
 import profileData from '../data/profile.json';
 import ProfilePic from '../assets/profilepic.jpg';
@@ -52,9 +52,9 @@ const User = ({ className }) => (
 );
 
 // Desktop navigation item
-const NavItem = ({ icon, label, active }) => {
+const NavItem = ({ icon, label, active, onClick }) => {
   return (
-    <button className="flex flex-col items-center text-[#00000099] hover:text-black transition-colors">
+    <button className="flex flex-col items-center text-[#00000099] hover:text-black transition-colors" onClick={onClick}>
       <div className={`p-1 ${active ? 'text-black' : ''}`}>
         {icon}
       </div>
@@ -64,9 +64,9 @@ const NavItem = ({ icon, label, active }) => {
 };
 
 // Mobile navigation item
-const MobileNavItem = ({ icon, label, active }) => {
+const MobileNavItem = ({ icon, label, active, onClick }) => {
   return (
-    <button className="flex items-center w-full px-4 py-2 text-[#00000099] hover:text-black hover:bg-gray-50 transition-colors">
+    <button className="flex items-center w-full px-4 py-2 text-[#00000099] hover:text-black hover:bg-gray-50 transition-colors" onClick={onClick}>
       <div className={`p-1 ${active ? 'text-black' : ''}`}>
         {icon}
       </div>
@@ -89,6 +89,10 @@ const LinkedInNavbar = () => {
   const profileRef = useRef(null);
 
   const { name, title } = profileData;
+
+  const handleDownloadResume = () => {
+    window.open('https://drive.google.com/file/d/1DSNV7iW8gMfe8ItTwzlz57l8hcdeflIs/view?usp=sharing', '_blank');
+  };
 
   // Close profile dropdown when clicking outside
   useEffect(() => {
@@ -143,7 +147,7 @@ const LinkedInNavbar = () => {
             <NavItem icon={<Users className="w-6 h-6" />} label="Network" />
             <NavItem icon={<Briefcase className="w-6 h-6" />} label="Jobs" />
             <NavItem icon={<Message className="w-6 h-6" />} label="Messaging" />
-            <NavItem icon={<Bell className="w-6 h-6" />} label="Notifications" />
+            <NavItem icon={<File className="w-6 h-6" />} label="Resume" onClick={handleDownloadResume} />
             <div className="border-l border-gray-200 h-8" />
             
             {/* Me dropdown */}
@@ -231,7 +235,7 @@ const LinkedInNavbar = () => {
               <MobileNavItem icon={<Users className="w-6 h-6" />} label="Network" />
               <MobileNavItem icon={<Briefcase className="w-6 h-6" />} label="Jobs" />
               <MobileNavItem icon={<Message className="w-6 h-6" />} label="Messaging" />
-              <MobileNavItem icon={<Bell className="w-6 h-6" />} label="Notifications" />
+              <MobileNavItem icon={<File className="w-6 h-6" />} label="Resume" onClick={handleDownloadResume} /> 
               <MobileNavItem icon={<User className="w-6 h-6" />} label="Me" />
             </div>
           </div>
