@@ -18,6 +18,7 @@ import About from '../components/About';
 import EducationSection from '../components/Educations';
 import ExperienceSection from '../components/Experience';
 import LicencesSection from '../components/Licenses';
+import ProfileLinks from '../components/ProfileLinks';
 
 const MyProfile = () => {
 
@@ -88,6 +89,7 @@ const MyProfile = () => {
           <RecommendationsSection />
         </div>
         <div className='boxes-wrapper flex gap-4 flex-col'>
+            <ProfileLinks />
           <Skills />
           <PublicationsSection />
           <HonorsAndAwards />
